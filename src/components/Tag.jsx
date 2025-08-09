@@ -1,9 +1,10 @@
 import React from 'react'
 import './Tag.css'
-export default function Tag() {
+export default function Tag(props) {
   return (
-    <div>
-      <button className="tag">HTML</button>
+    <div className=''>
+      <button className="tag">{props.name}</button>
+
     </div>
   )
 }

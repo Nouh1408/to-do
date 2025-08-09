@@ -8,21 +8,21 @@ export default function Task() {
         <form>
           <input type="text" className="U-Input" placeholder="Enter Task" />
           <div>
-            <div className="task-form">
-              <div>
-                <Tag />
-                <Tag />
-                <Tag />
-                <Tag />
+            <div className="task-form ">
+              <div className=" d-flex flex-wrap gap-1">
+                <Tag name="HTML" />
+                <Tag name="CSS" />
+                <Tag name="JavaScript"/>
+                <Tag name="Node.JS"/>
               </div>
 
-              <div>
-                <select className="status">
+              <div className=" d-flex">
+                <select className="status me-2">
                   <option value="todo">To do</option>
                   <option value="doing">Doing</option>
                   <option value="done">Done</option>
                 </select>
-                <button type="submit" className="add-task">
+                <button type="submit" className=" btn btn-danger">
                   Add Task
                 </button>
               </div>
